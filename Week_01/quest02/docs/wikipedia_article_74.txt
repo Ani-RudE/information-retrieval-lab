@@ -1,0 +1,44 @@
+GraphQL is a data query and manipulation language for APIs, that allows a client to specify what data it needs ("declarative data fetching"). A GraphQL server can fetch data from separate sources for a single client query and present the results in a unified graph, so it is not tied to any specific database or storage engine. 
+The associated GraphQL runtime engine is open-source.
+
+History
+Facebook started GraphQL development in 2012 and released it as open source in 2015. In 2018, GraphQL was moved to the newly established GraphQL Foundation, hosted by the non-profit Linux Foundation. 
+On 9 February 2018, the GraphQL Schema Definition Language became part of the specification.
+Many popular public APIs adopted GraphQL as the default way to access them. These include public APIs of Facebook, GitHub, Yelp, Shopify and Google Directions API.
+
+Design
+GraphQL supports reading, writing (mutating), and subscribing to changes to data (realtime updates – commonly implemented using WebSockets). A GraphQL service is created by defining types with fields, then providing functions to resolve the data for each field. The types and fields make up what is known as the schema definition. The functions that retrieve and map the data are called resolvers.
+After being validated against the schema, a GraphQL query is executed by the server. The server returns a result that mirrors the shape of the original query, typically as JSON.
+
+Type system
+The root type of a GraphQL schema, Query by default, contains all of the fields that can be queried. Other types define the objects and fields that the GraphQL server can return. There are several base types, called scalars, to represent things like strings, numbers, and IDs.
+
+Fields are defined as nullable by default, and a trailing exclamation mark can be used to make a field non-nullable (required). A field can be defined as a list by wrapping the field's type in square brackets (for example, authors: [String]).
+
+Queries
+A GraphQL query defines the exact shape of the data needed by the client.Once validated and executed by the GraphQL server, the data is returned in the same shape.
+
+Mutations
+A GraphQL mutation allows for data to be created, updated, or deleted. Mutations generally contain variables, which allow data to be passed into the server from the client. The mutation also defines the shape of the data that will be returned to the client after the operation is complete.
+
+The variables are passed as an object with fields that match the variable names in the mutation.Once the operation is complete, the GraphQL server will return data matching the shape defined by the mutation.
+
+Subscriptions
+GraphQL also supports live updates sent from the server to client in an operation called a subscription. Again, the client defines the shape of the data that it needs whenever an update is made.When a mutation is made through the GraphQL server that updates the associated field, data is sent to all subscribed clients in the format setup through the subscription.
+
+Comparison to other query languages
+GraphQL does not provide a full-fledged graph query language such as SPARQL, or even in dialects of SQL that support transitive closure.  For example, a GraphQL interface that reports the parents of an individual cannot return, in a single query, the set of all their ancestors.
+
+Testing
+GraphQL APIs can be tested manually or with automated tools issuing GraphQL requests and verifying the correctness of the results. Automatic test generation is also possible. New requests may be produced through search-based techniques due to a typed schema and introspection capabilities.
+Some of the software tools used for testing GraphQL implementations include Postman, GraphiQL, Apollo Studio, GraphQL Editor, and Step CI.
+
+See also
+Query by Example
+OpenAPI Specification
+Microservices
+
+References
+External links
+Official website
+GraphQL: The Documentary on YouTube

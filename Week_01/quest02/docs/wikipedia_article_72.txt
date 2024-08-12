@@ -1,0 +1,27 @@
+Express.js, or simply Express, is a back end web application framework for building RESTful APIs with Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs. It has been called the de facto standard server framework for Node.js.
+The original author, TJ Holowaychuk, described it as a Sinatra-inspired server, meaning that it is relatively minimal with many features available as plugins. Express is the back-end component of popular development stacks like the MEAN, MERN or MEVN stack, together with the MongoDB database software and a JavaScript front-end framework or library.
+
+History
+Express.js was founded by TJ Holowaychuk. The first release, according to Express.js's GitHub repository, was on 22 May 2010. Version 0.12
+In June 2014, rights to manage the project were acquired by StrongLoop. StrongLoop was acquired by IBM in September 2015; in January 2016, IBM announced that it would place Express.js under the stewardship of the Node.js Foundation incubator.
+
+Features
+Robust routing
+Concentrate on high-performance
+HTTP helpers (redirection, caching, etc..).
+Asynchronous programming
+
+Popularity
+Express.js is used by Fox Sports, PayPal, Uber and IBM.
+
+Example
+The following program will respond to HTTP GET requests with the text 'Hi, your request has been received', and listen to the port the program is running on (in this case, port 2000).
+
+See also
+JavaScript framework
+Meteor
+Socket.IO
+
+References
+External links
+Official website

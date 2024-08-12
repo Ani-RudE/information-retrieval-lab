@@ -1,0 +1,16 @@
+Continuous deployment (CD) is a software engineering approach in which software functionalities are delivered frequently and through automated deployments.
+Continuous deployment contrasts with continuous delivery (also abbreviated CD), a similar approach in which software functionalities are also frequently delivered and deemed to be potentially capable of being deployed, but are actually not deployed. As such, continuous deployment can be viewed as a more complete form of automation than continuous delivery.
+
+Motivation
+A major motivation for continuous deployment is that deploying software into the field more often makes it easier to find, catch, and fix bugs. A bug is easier to fix when it comes from code deployed five minutes ago instead of five days ago.
+
+Example
+In an environment in which data-centric microservices provide the functionality, and where the microservices can have multiple instances, continuous deployment consists of instantiating the new version of a microservice and retiring the old version once it has drained all the requests in flight.
+
+See also
+CI/CD, the combined practices of either (more often) continuous integration and continuous delivery, or (less often) continuous integration and continuous deployment
+Canary release
+Blue–green deployment
+
+
+== References ==
